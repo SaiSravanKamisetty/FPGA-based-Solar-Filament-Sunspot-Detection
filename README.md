@@ -62,7 +62,7 @@ In Verilog/ModelSim, the focus so far has been on **CLAHE preprocessing**.
 **Result:**  
 | Original | CLAHE (No Interpolation) |
 |----------|---------------------------|
-| ![](imgs/original.png) | ![](imgs/clahe_no_interp.png) |
+| ![](imgs/original.jpg) | ![](imgs/clahe_no_interp.png) |
 
 ---
 
@@ -74,7 +74,7 @@ In Verilog/ModelSim, the focus so far has been on **CLAHE preprocessing**.
 **Result:**  
 | Original | CLAHE with Interpolation |
 |----------|---------------------------|
-| ![](imgs/original.png) | ![](imgs/clahe_interp.png) |
+| ![](imgs/original.jpg) | ![](imgs/clahe_interp.png) |
 
 ---
 
