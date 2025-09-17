@@ -94,9 +94,5 @@ In Verilog/ModelSim, the focus so far has been on **CLAHE preprocessing**.
   - Streaming pipeline with line buffers.  
 - Deploy on FPGA hardware for **real-time solar filament / sunspot detection**.  
 
----
 
-## 📜 License
-
-Released under the MIT License.
 
