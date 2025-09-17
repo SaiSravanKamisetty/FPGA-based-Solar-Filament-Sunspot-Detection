@@ -29,7 +29,7 @@ The complete image-processing chain was first implemented in MATLAB to validate 
 
 | Original Image | CLAHE | Binary (BW) | Edge Detection |
 |----------------|-------|-------------|----------------|
-| ![](imgs/original.png) | ![](imgs/clahe_matlab.png) | ![](imgs/bw_matlab.png) | ![](imgs/edges_matlab.png) |
+| ![](imgs/original.jpg) | ![](imgs/clahe_matlab.png) | ![](imgs/bw_matlab.png) | ![](imgs/edges_matlab.png) |
 
 ✅ This proves the full pipeline works in MATLAB.
 
