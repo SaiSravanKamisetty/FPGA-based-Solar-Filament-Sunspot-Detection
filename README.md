@@ -40,11 +40,11 @@ The complete image-processing chain was first implemented in MATLAB to validate 
 Because ModelSim cannot read images directly:
 
 - **Conversion (MATLAB → Verilog):**  
-  - `write_hex_rowmajor.m` converts 256×256 grayscale image → `image.hex`.
+  - `HexConvert.m` converts 256×256 grayscale image → `image.hex`.
 
 - **Conversion (Verilog → MATLAB):**  
   - After simulation, `image_eq.hex` is produced.  
-  - `hex2png_extended.m` converts this back to PNG for visualization.
+  - `hex2png.m` converts this back to PNG for visualization.
 
 This ensures identical inputs/outputs between MATLAB and Verilog.
 
@@ -55,7 +55,7 @@ This ensures identical inputs/outputs between MATLAB and Verilog.
 In Verilog/ModelSim, the focus so far has been on **CLAHE preprocessing**.
 
 ### Step 1: CLAHE without Interpolation
-- File: `clahe_using_rom_tb_fixed.v`  
+- File: `rom_image.v`  
 - Per-tile CLAHE (8×8 tiles).  
 - Issue: Visible tile boundaries (checkerboard effect).
 
@@ -67,7 +67,7 @@ In Verilog/ModelSim, the focus so far has been on **CLAHE preprocessing**.
 ---
 
 ### Step 2: CLAHE with Bilinear Interpolation
-- File: `clahe_interp_final_tb.v`  
+- File: `clahe_image.v`  
 - Fix: Bilinear interpolation of LUTs across neighboring tiles.  
 - Result: Seamless enhancement, visually matching MATLAB’s `adapthisteq`.
 
